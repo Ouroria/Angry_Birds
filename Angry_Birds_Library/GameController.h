@@ -1,19 +1,25 @@
-#pragma once
-
 #ifndef ANGRY_BIRDS_GAME_CONTROLLER_H
 #define ANGRY_BIRDS_GAME_CONTROLLER_H
 
+#include "CameraManager.h"
+#include "InputController.h"
+#include "OrbitCamera.h"
 #include "cyclone.h"
-#include "raylib.h"
 
 class Game_Controller
 {
 public:
-	void restart();
+    Game_Controller();
 
-	void fixedTick(cyclone::real _dt);
+    void processInput();
+    void fixedTick(cyclone::real _dt);
+    void restart();
+    Camera3D GetCamera() const;
 
-	void processInput();
+private:
+    InputController m_input_controller;
+    OrbitCamera m_orbit_camera;
+    CameraManager m_camera_manager;
 };
 
-#endif // ANGRY_BIRDS_GAME_CONTROLLER_H
+#endif

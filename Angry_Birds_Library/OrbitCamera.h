@@ -11,8 +11,11 @@ public:
         float _distance,
         float _rotation_speed);
 
-    void Update(float _delta_time) override;
+    void Update(
+        float _delta_time,
+        const InputController::InputSnapshot& _snapshot) override;
     Camera3D GetCamera() const override;
+    void UpdateZoom(float _wheel);
 
 private:
     Vector3 m_target;
