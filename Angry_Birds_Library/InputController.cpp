@@ -12,9 +12,9 @@ InputController::InputSnapshot InputController::Capture()
 
     snapshot.mouse_wheel = GetMouseWheelMove();
 
-    snapshot.horizontal_axis =
-        static_cast<float>(IsKeyDown(KEY_D)) -
-        static_cast<float>(IsKeyDown(KEY_A));
+    //snapshot.horizontal_axis =
+    //    static_cast<float>(IsKeyDown(KEY_D)) -
+    //    static_cast<float>(IsKeyDown(KEY_A));
 
     return snapshot;
 }

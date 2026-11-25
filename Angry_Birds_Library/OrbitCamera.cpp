@@ -52,10 +52,6 @@ Camera3D OrbitCamera::GetCamera() const
     return m_camera;
 }
 
-
-
-
-
 void OrbitCamera::Update(
     float _delta_time,
     const InputController::InputSnapshot& _snapshot)
