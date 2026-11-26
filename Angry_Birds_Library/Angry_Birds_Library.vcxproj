@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="AngryBirdsLibrary.h" />
     <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="EntityId.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameController.h" />
     <ClInclude Include="GameStateMachine.h" />
@@ -171,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="EntityId.cpp" />
     <ClCompile Include="GameController.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </ExcludedFromBuild>
