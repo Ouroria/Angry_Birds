@@ -4,7 +4,10 @@
     <Platform Name="Win32" />
     <Platform Name="x64" />
   </Configurations>
-  <Project Path="Angry_Birds.vcxproj" Id="790FA7DC-E5C4-1FD2-6EB9-19A9DA6D16D6" DefaultStartup="true">
+  <Project Path="../Test_Angry_Birds/Test_Angry_Birds.vcxproj" Id="1dd6c444-f98d-4e03-8676-cc713b123949">
+    <Platform Solution="*|ARM64" Project="x64" />
+  </Project>
+  <Project Path="Angry_Birds.vcxproj" Id="790fa7dc-e5c4-1fd2-6eb9-19a9da6d16d6">
     <BuildDependency Project="raylib.vcxproj" />
   </Project>
   <Project Path="Angry_Birds_Library/Angry_Birds_Library.vcxproj" Id="57bd970f-3acc-4b9e-9465-68f67e517d7a">
@@ -13,9 +16,5 @@
   <Project Path="Cyclone_Library/Cyclone_Library.vcxproj" Id="f5ed0a14-a592-42a6-8105-d1ee453a10ac">
     <Platform Solution="*|ARM64" Project="x64" />
   </Project>
-  <Project Path="raylib.vcxproj" Id="8898EA18-743A-15EF-5DF5-284349369C3F">
-  </Project>
-  <Project Path="Test_Angry_Birds/Test_Angry_Birds.vcxproj" Id="9646bcb5-7051-4780-bc88-3c46e50b4747">
-    <Platform Solution="*|ARM64" Project="x64" />
-  </Project>
+  <Project Path="raylib.vcxproj" Id="8898ea18-743a-15ef-5df5-284349369c3f" />
 </Solution>
