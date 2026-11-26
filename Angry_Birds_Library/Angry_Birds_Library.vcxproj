@@ -156,20 +156,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AngryBirdsLibrary.h" />
+    <ClInclude Include="CameraManager.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameController.h" />
     <ClInclude Include="GameStateMachine.h" />
+    <ClInclude Include="ICameraController.h" />
     <ClInclude Include="IGameState.h" />
+    <ClInclude Include="InputController.h" />
     <ClInclude Include="Launcher.h" />
+    <ClInclude Include="OrbitCamera.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ShotSettings.h" />
     <ClInclude Include="TrajectoryPredictor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="GameController.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="GameStateMachine.cpp" />
+    <ClCompile Include="ICameraController.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="IGameState.cpp" />
+    <ClCompile Include="InputController.cpp" />
     <ClCompile Include="Launcher.cpp" />
+    <ClCompile Include="OrbitCamera.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
