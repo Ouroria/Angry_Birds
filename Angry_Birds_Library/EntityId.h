@@ -1,36 +1,24 @@
+#ifndef ANGRY_BIRD_OBJECT_ENTITYID_H
+#define ANGRY_BIRD_OBJECT_ENTITYID_H
 
-#ifndef ANGRY_BIRD_OBJECT_OBJECTPOOL_H
-#define ANGRY_BIRD_OBJECT_OBJECTPOOL_H
-
-#include <array>
 #include <cstddef>
-#include <optional>
+#include <cstdint>
+#include <limits>
 
-#include "EntityId.h"
-
-template <typename T, std::size_t Capacity>
-class ObjectPool
+struct EntityId
 {
-public:
-    template <typename... Args>
-    std::optional<EntityId> create(Args&&... args)
-    {
-        for (std::size_t i = 0; i < Capacity; i++)
-        {
-            if (!m_objects[i].has_value())
-            {
-                m_objects[i].emplace(
-                    std::forward<Args>(args)...);
+    using Index = std::size_t;
+    using Generation = std::uint64_t;
 
-                return EntityId{ i, 1 };
-            }
-        }
+    static constexpr Index InvalidIndex =
+        std::numeric_limits<Index>::max();
 
-        return std::nullopt;
-    }
+    Index index = InvalidIndex;
+    Generation generation = 0;
 
-private:
-    std::array<std::optional<T>, Capacity> m_objects{};
+    bool IsValid() const;
+
+    bool operator==(const EntityId& _other) const;
 };
 
 #endif

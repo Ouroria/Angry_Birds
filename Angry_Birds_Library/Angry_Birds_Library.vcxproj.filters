@@ -19,6 +19,12 @@
     <Filter Include="Fichiers sources\Camera">
       <UniqueIdentifier>{80f2bffd-ea21-4e3a-80fd-af147ac8dbe8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\ObjectPool">
+      <UniqueIdentifier>{5b2af261-59e8-4778-a6bd-6bb3923db4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\ObjectPool">
+      <UniqueIdentifier>{5298774b-6cc9-44a4-a789-0fe3d9fd9ea8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -60,6 +66,18 @@
     <ClInclude Include="InputController.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="EntityId.h">
+      <Filter>Fichiers d%27en-tête\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEntity.h">
+      <Filter>Fichiers d%27en-tête\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>Fichiers d%27en-tête\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Fichiers d%27en-tête\ObjectPool</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -94,6 +112,15 @@
     </ClCompile>
     <ClCompile Include="InputController.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityId.cpp">
+      <Filter>Fichiers sources\ObjectPool</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEntity.cpp">
+      <Filter>Fichiers sources\ObjectPool</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Fichiers sources\ObjectPool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

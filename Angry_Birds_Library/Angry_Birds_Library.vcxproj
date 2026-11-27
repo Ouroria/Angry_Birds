@@ -157,24 +157,30 @@
   <ItemGroup>
     <ClInclude Include="AngryBirdsLibrary.h" />
     <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="EntityId.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameController.h" />
+    <ClInclude Include="GameEntity.h" />
     <ClInclude Include="GameStateMachine.h" />
     <ClInclude Include="ICameraController.h" />
     <ClInclude Include="IGameState.h" />
     <ClInclude Include="InputController.h" />
     <ClInclude Include="Launcher.h" />
+    <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="OrbitCamera.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SceneObject.h" />
     <ClInclude Include="ShotSettings.h" />
     <ClInclude Include="TrajectoryPredictor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="EntityId.cpp" />
     <ClCompile Include="GameController.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="GameEntity.cpp" />
     <ClCompile Include="GameStateMachine.cpp" />
     <ClCompile Include="ICameraController.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -190,6 +196,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SceneObject.cpp" />
     <ClCompile Include="ShotSettings.cpp" />
     <ClCompile Include="TrajectoryPredictor.cpp" />
   </ItemGroup>
