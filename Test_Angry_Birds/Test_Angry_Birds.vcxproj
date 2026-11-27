@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ObjectPoolTests.cpp" />
+    <ClCompile Include="PillarCubeTests.cpp" />
     <ClCompile Include="SceneObjectTests.cpp" />
     <ClCompile Include="OrbitalCameraTests.cpp" />
     <ClCompile Include="pch.cpp">
