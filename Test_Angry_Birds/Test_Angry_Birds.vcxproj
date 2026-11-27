@@ -116,8 +116,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Angry_Birds.vcxproj">
+      <Project>{790fa7dc-e5c4-1fd2-6eb9-19a9da6d16d6}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Angry_Birds_Library\Angry_Birds_Library.vcxproj">
       <Project>{57bd970f-3acc-4b9e-9465-68f67e517d7a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Cyclone_Library\Cyclone_Library.vcxproj">
+      <Project>{f5ed0a14-a592-42a6-8105-d1ee453a10ac}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\raylib.vcxproj">
+      <Project>{8898ea18-743a-15ef-5df5-284349369c3f}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

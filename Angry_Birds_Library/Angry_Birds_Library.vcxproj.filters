@@ -25,6 +25,12 @@
     <Filter Include="Fichiers sources\ObjectPool">
       <UniqueIdentifier>{5298774b-6cc9-44a4-a789-0fe3d9fd9ea8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\PillarCube">
+      <UniqueIdentifier>{35607fc1-d06a-4d39-8c78-8114a84cd9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\PillarCube">
+      <UniqueIdentifier>{681b395c-3ff9-4421-99d0-60eea65e7205}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -78,6 +84,21 @@
     <ClInclude Include="SceneObject.h">
       <Filter>Fichiers d%27en-tête\ObjectPool</Filter>
     </ClInclude>
+    <ClInclude Include="PillarBlock.h">
+      <Filter>Fichiers d%27en-tête\PillarCube</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Fichiers d%27en-tête\PillarCube</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeBlock.h">
+      <Filter>Fichiers d%27en-tête\PillarCube</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBuilder.h">
+      <Filter>Fichiers d%27en-tête\PillarCube</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -122,5 +143,22 @@
     <ClCompile Include="SceneObject.cpp">
       <Filter>Fichiers sources\ObjectPool</Filter>
     </ClCompile>
+    <ClCompile Include="PillarBlock.cpp">
+      <Filter>Fichiers sources\PillarCube</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Fichiers sources\PillarCube</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeBlock.cpp">
+      <Filter>Fichiers sources\PillarCube</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelBuilder.cpp">
+      <Filter>Fichiers sources\PillarCube</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Angry_Birds_Library.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
